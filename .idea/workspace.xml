@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c90b19f-90c4-4b5f-b39e-485cc2285d96" name="Changes" comment="VD04">
-      <change afterPath="$PROJECT_DIR$/appBlogJinji.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2c90b19f-90c4-4b5f-b39e-485cc2285d96" name="Changes" comment="VD04_Jinja" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,11 +95,20 @@
       <option name="project" value="LOCAL" />
       <updated>1717490980516</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="VD04_Jinja">
+      <option name="closed" value="true" />
+      <created>1717598071401</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717598071401</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="VD04" />
-    <option name="LAST_COMMIT_MESSAGE" value="VD04" />
+    <MESSAGE value="VD04_Jinja" />
+    <option name="LAST_COMMIT_MESSAGE" value="VD04_Jinja" />
   </component>
 </project>
