@@ -22,4 +22,64 @@
             <p>Изучите, как использовать Bootstrap для создания адаптивных и привлекательных веб-страниц. Bootstrap - это популярный фронтенд-фреймворк, который облегчает создание стильных и адаптивных веб-сайтов. На этом курсе вы научитесь использовать компоненты Bootstrap, такие как сетки, кнопки, формы и навигационные панели, чтобы создавать современные и удобные интерфейсы. Также вы узнаете, как настраивать Bootstrap под свои нужды, используя препроцессоры CSS, такие как Sass и Less.</p>
         </div>
     </div>
+
+    <!-- Модальное окно -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Форма регистрации</h2>
+            <form method="POST" action="/register">
+                <div class="form-group">
+                    <label for="name">Имя</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">Город</label>
+                    <input type="text" class="form-control" id="city" name="city" required>
+                </div>
+                <div class="form-group">
+                    <label for="hobby">Хобби</label>
+                    <input type="text" class="form-control" id="hobby" name="hobby" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Возраст</label>
+                    <input type="number" class="form-control" id="age" name="age" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Показать модальное окно через 1 секунду
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById('registerModal').style.display = 'block';
+            }, 1000);
+        };
+
+        // Закрыть модальное окно
+        var modal = document.getElementById('registerModal');
+        var span = document.getElementsByClassName('close')[0];
+
+        span.onclick = function() {
+            modal.style.display = 'none';
+        };
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        };
+    </script>
+
+    {% if name and city and hobby and age %}
+        <div class="mt-5">
+            <h2>Введенные данные:</h2>
+            <p><strong>Имя:</strong> {{ name }}</p>
+            <p><strong>Город:</strong> {{ city }}</p>
+            <p><strong>Хобби:</strong> {{ hobby }}</p>
+            <p><strong>Возраст:</strong> {{ age }}</p>
+        </div>
+    {% endif %}
 {% endblock %}
